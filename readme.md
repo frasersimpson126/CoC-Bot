@@ -21,7 +21,7 @@
 
 2. **Configure Emulator:**  
    - Ensure Android emulator is running and accessible via ADB (`platform-tools`).
-   - set adb port in all 3 files (not attacks)
+   - set adb port in the `attacks.py` file
 
 3. **Run the Bot:**  
    - For main base farming:  

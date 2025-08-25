@@ -5,7 +5,7 @@ import threading
 import attacks as a
 
 
-p = '5554' # port
+p  = str(a.p) # port
 Bbot_thread = None
 Bbot_running = threading.Event()
 

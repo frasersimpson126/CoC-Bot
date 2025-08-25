@@ -7,7 +7,7 @@ import attacks as a
 trophiebypass = False
 attacktype = "Sdrag"
 
-p = '5554' # port
+p  = str(a.p) # port
 bot_thread = None
 bot_running = threading.Event()
 
