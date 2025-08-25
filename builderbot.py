@@ -29,15 +29,30 @@ def BBot():
     while Bbot_running.is_set():
         f.find(p)
         t.sleep(5)
+        secondattack = False
         log("attack started")
         a.BB()
         t.sleep(10)
         while f.checkpixelBB(p,888,900) != "(180, 230, 125, 255)" :
             t.sleep(1)
-
+            if f.checkpixelBB(p,1862,815) != "(255, 255, 255, 255)" and secondattack == False:
+                secondattack = True
+                log("round 2")
+                a.BB2()
+                t.sleep(10)
+        
+        log("attack finished")
         f.tap(950,900,p)
+        t.sleep(2)
+        f.swipe(p)
+        log("collecting loot")
+        t.sleep(0.5)
+        f.tap(871,521,p)
+        t.sleep(0.5)
+        f.tap(1400,920,p)
         t.sleep(1)
-
+        f.tap(1600,100,p)
+        t.sleep(1)
 
 
 # Create main window
